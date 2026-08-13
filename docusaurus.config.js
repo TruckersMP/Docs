@@ -65,7 +65,7 @@ const config = {
                 specs: [
                     {
                         id: 'web-api-v2',
-                        spec: 'https://raw.githubusercontent.com/TruckersMP/API-Documentation/main/OpenAPI-v2.yml',
+                        spec: 'openapi/OpenAPI-v2.yml',
                         route: '/web-api/',
                     },
                 ],
