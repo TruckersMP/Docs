@@ -1,0 +1,148 @@
+/**
+ * TruckersMP branding on top of Infima.
+ *
+ * Brand red: #b92025.
+ * Fonts: Inter (body), Barlow (headings), JetBrains Mono (code).
+ */
+
+:root {
+    --ifm-color-primary: #b92025;
+    --ifm-color-primary-dark: #a71d21;
+    --ifm-color-primary-darker: #9d1b1f;
+    --ifm-color-primary-darkest: #82161a;
+    --ifm-color-primary-light: #cb2329;
+    --ifm-color-primary-lighter: #d2242a;
+    --ifm-color-primary-lightest: #dd3a40;
+
+    --ifm-font-family-base: 'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+    --ifm-font-family-monospace: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    --ifm-heading-font-family: 'Barlow', 'Inter', Arial, sans-serif;
+    --ifm-heading-font-weight: 600;
+    --ifm-font-size-base: 16px;
+    --ifm-line-height-base: 1.7;
+    --ifm-code-font-size: 90%;
+
+    --tmp-navbar-bg: #17191d;
+    --ifm-background-color: #ffffff;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+html {
+    background-color: #303846;
+}
+
+html[data-theme='dark'] {
+    background-color: #131519;
+}
+
+#__docusaurus {
+    background-color: var(--ifm-background-color);
+}
+
+[data-theme='dark'] .button--primary {
+    /* Infima picks the inverse font color here, which is dark on dark. */
+    --ifm-button-color: #ffffff;
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #e8555c;
+    --ifm-color-primary-dark: #e43a42;
+    --ifm-color-primary-darker: #e22c35;
+    --ifm-color-primary-darkest: #c51d25;
+    --ifm-color-primary-light: #ec7076;
+    --ifm-color-primary-lighter: #ee7e83;
+    --ifm-color-primary-lightest: #f3a7aa;
+
+    --ifm-background-color: #16181d;
+    --ifm-background-surface-color: #1b1e24;
+    --ifm-footer-background-color: #131519;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ifm-heading-font-family);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+/* The navbar is always dark so the white wordmark logo works in both themes. */
+.navbar {
+    background-color: var(--tmp-navbar-bg);
+    border-bottom: 1px solid rgba(185, 32, 37, 0.6);
+}
+
+.navbar__logo {
+    height: 1.6rem;
+    margin-right: 0.6rem;
+}
+
+.navbar__title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Landing hero. */
+.hero--truckersmp {
+    background: linear-gradient(160deg, #17191d 0%, #22252b 100%);
+    color: #ffffff;
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(185, 32, 37, 0.6);
+}
+
+.hero--truckersmp .hero__title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.hero--truckersmp .hero__subtitle {
+    color: #d5d7db;
+    max-width: 46rem;
+}
+
+.hero--truckersmp .button--primary {
+    background-color: #b92025;
+    border-color: #b92025;
+}
+
+.hero--truckersmp .button--primary:hover {
+    background-color: #d2242a;
+    border-color: #d2242a;
+}
+
+/* The announcement bar sets its text color inline, but the close button
+   and links do not inherit it; keep both white on the brand red. */
+div[class*='announcementBar'] {
+    border-bottom: none;
+}
+
+div[class*='announcementBar'] .clean-btn {
+    color: #ffffff;
+}
+
+div[class*='announcementBarContent'] a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Landing cards. */
+.home-card {
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.home-card h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
