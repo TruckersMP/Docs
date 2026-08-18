@@ -15,8 +15,8 @@ greets you when you connect to a server.
   supported.
 - **A C++17 (or newer) compiler.** The examples use Visual Studio 2026 (MSVC)
   and CMake, but any toolchain that produces a Windows x64 DLL works.
-- **The TruckersMP client**, installed and able to launch Euro Truck Simulator 2
-  or American Truck Simulator.
+- **The TruckersMP client**, version 0.7.4.0 or newer, installed and able to
+  launch Euro Truck Simulator 2 or American Truck Simulator.
 - **The SDK.** It lives on GitHub:
   [TruckersMP/GameClientSDK](https://github.com/TruckersMP/GameClientSDK). The
   SDK is header-only; everything you compile against is in the `include/`
