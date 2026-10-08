@@ -882,6 +882,25 @@ components:
         groupID:
           type: number
           description: The ID of the group the user belongs to
+        secondaryGroups:
+          type: array
+          description: Additional groups the user belongs to
+          items:
+            type: object
+            properties:
+              groupName:
+                type: string
+                description: The name of the group
+              groupColor:
+                type: string
+                description: The color of the group
+              groupID:
+                type: number
+                description: The ID of the group
+            required:
+              - groupName
+              - groupColor
+              - groupID
         banned:
           type: boolean
           description: If the user is currently banned
@@ -1035,6 +1054,7 @@ components:
         - groupName
         - groupColor
         - groupID
+        - secondaryGroups
         - banned
         - displayBans
         - patreon
